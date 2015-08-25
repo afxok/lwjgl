@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: LWJGL
+Bundle-SymbolicName: org.lwjgl
+Bundle-Version: 3.0.0
+Bundle-ClassPath: lwjgl.jar
+Bundle-NativeCode: native/liblwjgl.dylib; native/libopenal.dylib;
+    osname=MacOSX; processor=x86_64,
+  native/liblwjgl32.so; native/libopenal32.dll;
+    osname=Linux; processor=x86,
+  native/liblwjgl.so; native/libopenal.dll;
+    osname=Linux; processor=x86_64,
+  native/lwjgl32.dll; native/OpenAL32.dll;
+    osname=Win32; processor=x86,
+  native/lwjgl.dll; native/OpenAL.dll;
+    osname=Win32; processor=x86_64
+Bundle-Vendor: LWJGL
+Export-Package: org.lwjgl,
+ org.lwjgl.glfw,
+ org.lwjgl.openal,
+ org.lwjgl.opencl,
+ org.lwjgl.opengl,
+ org.lwjgl.ovr,
+ org.lwjgl.stb,
+ org.lwjgl.system,
+ org.lwjgl.system.libffi,
+ org.lwjgl.system.linux,
+ org.lwjgl.system.macosx,
+ org.lwjgl.system.simd,
+ org.lwjgl.system.windows
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
